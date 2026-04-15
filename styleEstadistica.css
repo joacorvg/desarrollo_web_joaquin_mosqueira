@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor */
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #2ecc71;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* Imágenes */
+img {
+    width: 300px;
+    height: auto;
+    margin: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/* Botón */
+.botones {
+    margin-top: 25px;
+}
+
+.botones button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botones button:hover {
+    background-color: #27ae60;
+}

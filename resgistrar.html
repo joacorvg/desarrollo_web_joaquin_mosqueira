@@ -1,0 +1,156 @@
+<!--Aprender a poner cosas como fecha, dia, hora con las clases y aux 3 -->
+<!--Trabajar con el css-->
+<!--ver formulario html5 para flechas que cambian de pagina-->
+<!-- trabajar con el aviso de los errores, aux y formulario-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" type="text/css" href="./styleRegistrar.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>Registra tu actividad</h1>
+        <p id="bajada">Completa este formulario correctamente para registrar tu actividad</p>
+      </div>
+      <form class="formulario" action="#">
+        <h2>Datos Personales</h2>
+        <div id="nombre-input" class="grupo-input">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required>
+        </div>
+        <div id="val-box-nombre" hidden>
+            <p id="val-text-nombre"></p>
+        </div>
+
+        <div id="apellido-input" class="grupo-input">
+          <label for="apellido">Apellido</label>
+          <input id="apellido" name="apellido" type="text" required>
+        </div>
+         <div id="val-box-apellido" hidden>
+            <p id="val-text-apellido"></p>
+        </div>
+
+        <div id="mail-input" class="grupo-input">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+         <div id="val-box-email" hidden>
+            <p id="val-text-email"></p>
+        </div>
+
+        <div id="telefono-input" class="grupo-input">
+          <label for="telefono">Número de Teléfono</label>
+          <input id="telefono" name="telefono" type="text" maxlength="8" required>
+        </div>
+         <div id="val-box-telefono" hidden>
+            <p id="val-text-telefono"></p>
+        </div>
+
+        <div id="estamento-select" class="grupo-input">
+         <label for="estamento">Estamento</label>
+            <select name="estamento" id="estamento" required>
+                <option value="">Seleccione su estamento</option>
+            </select><br>
+        </div>
+        <div id="val-box-estamento" hidden>
+            <p id="val-text-estamento"></p>
+        </div>
+  
+
+        <h2>Actividad</h2>
+        <div id="nombreAct-input" class="grupo-input">
+          <label for="nombreAct"> Nombre de la actividad</label>
+          <input id="nombreAct" name="nombreAct" type="text" required>
+        </div>
+         <div id="val-box-nombreAct" hidden>
+            <p id="val-text-nombreAct"></p>
+        </div>
+
+        <div id="categoria-select" class="grupo-input">
+         <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria" required>
+                <option value="">Seleccione una categoria</option>
+            </select><br>
+        </div>
+        <div id="val-box-categoria" hidden>
+            <p id="val-text-categoria"></p>
+        </div>
+
+        <label for="categoria-otro" style="display:none;">Especifique</label>
+        <textarea id="categoria-otro" name="categoria-otro" style="display:none;"></textarea>
+
+        <div id="comuna-select" class="grupo-input">
+         <label for="comuna">Comuna en que se realiza</label>
+         <p>(Si es fuera de Santiago o es virtual, seleccione otro)</p>
+            <select name="comuna" id="comuna" required>
+                <option value="">Seleccione su comuna</option>
+            </select><br>
+        </div>
+        <div id="val-box-comuna" hidden>
+            <p id="val-text-comuna"></p>
+        </div>
+
+        <label for="comuna-otro" style="display:none;">Especifique</label>
+        <textarea id="comuna-otro" name="comuna-otro" style="display:none;"></textarea>
+    
+
+        <div id="dias-input" class = "grupo-input">
+          <label>Seleccione los días en que se realiza</label>
+          <label><input type="checkbox" name="dia" value="lunes">lunes</label>
+          <label><input type="checkbox" name="dia" value="martes">martes</label>
+          <label><input type="checkbox" name="dia" value="miercoles">miércoles</label>
+          <label><input type="checkbox" name="dia" value="jueves">jueves</label>
+          <label><input type="checkbox" name="dia" value="viernes">viernes</label>
+          <label><input type="checkbox" name="dia" value="sabado">sábado</label>
+          <label><input type="checkbox" name="dia" value="domingo">domingo</label>
+        </div>
+        <div id="val-box-dia" hidden>
+            <p id="val-text-dia"></p>
+        </div>
+
+        <div id="hora-input" class = "grupo-input">
+        <label for="hora-inicio">Hora de inicio</label>
+        <input type="time" id="hora-inicio" name="hora-inicio" required>
+        <label for="hora-fin">Hora de fin</label>
+        <input type="time" id="hora-fin" name="hora-fin" required>
+        </div>
+        <div id="val-box-hora" hidden>
+            <p id="val-text-hora"></p>
+        </div>
+
+        <div id="descripcion-input" class="grupo-input">
+          <label for="descripcion">Descripción (max 250 caracteres)</label>
+          <input id="descripcion" name="descripcion" type="text" maxlength="250" required>
+        </div>
+        <div id="val-box-descripcion" hidden>
+            <p id="val-text-descripcion"></p>
+        </div>
+
+        <div id="files-input" class="grupo-input">
+          <label for="files">Fotos y Videos</label>
+        <input id="files" name="files" type="file" multiple accept="image/*,video/*" required>
+        </div>
+        <div id="val-box-files" hidden>
+            <p id="val-text-files"></p>
+        </div>
+
+        <div id="link-input" class="grupo-input">
+          <label for="link">Link (opcional)</label>
+          <input id="link" name="link" type="url">
+        </div>
+        <div id="val-box-link" hidden>
+            <p id="val-text-link"></p>
+        </div>
+
+        <div class="botones">
+          <button id="submit-btn" type="button">Registrar</button>
+        </div>
+      </form>
+    </div>
+    <script src="validador.js"></script>
+    <script src="select.js"></script>
+  </body>
+</html>
