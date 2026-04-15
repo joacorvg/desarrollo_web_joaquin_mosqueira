@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #2ecc71;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Selects */
+select {
+    padding: 8px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* Bordes */
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Encabezado */
+th {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Celdas */
+td {
+    padding: 8px;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* Hover filas */
+tr:hover td {
+    background-color: #f0f0f0;
+}
+
+/* Paginación */
+div > button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+div > button:hover {
+    background-color: #27ae60;
+}
+
+/* Número de página */
+#pagina-actual {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Botón inicio */
+.botones button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.botones button:hover {
+    background-color: #27ae60;
+}

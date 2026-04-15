@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista</title>
+        <link rel="stylesheet" type="text/css" href="./styleLista.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <h1 id="bajada">Actividades registradas</h1>
+            </div>
+
+            <select id="filtroCategoria">
+                <option value="todas">Todas las categorías</option>
+                <option value="Deporte">Deporte</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Arte">Arte</option>
+                <option value="Social">Social</option>
+                <option value="Academico">Academico</option>
+            </select>
+
+            <select id="ordenNombre">
+                <option value="none">Sin orden</option>
+                <option value="asc">Nombre A-Z</option>
+                <option value="desc">Nombre Z-A</option>
+            </select>
+            <table style="cursor: pointer;">
+                <tr>
+                    <th>Nombre Persona</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Categoría Usuario</th>
+                    <th>Actividad</th>
+                    <th>Categoría</th>
+                    <th>Comuna</th>
+                    <th>Días</th>
+                    <th>Horas</th>
+                    <th>Descripción</th>
+                    <th>Link</th>
+                </tr>
+
+                <tr>
+                    <td>Juan Pérez</td><td>juan@mail.com</td><td>12345678</td><td>Estudiante pregrado</td>
+                    <td>Taller de Yoga</td><td>Deporte</td><td>Providencia</td><td>Lunes, Miércoles</td><td>18:00 - 19:30</td><td>Clases de yoga para principiantes</td><td>https://yoga.cl</td>
+                </tr>
+
+                <tr>
+                    <td>María González</td><td>maria@mail.com</td><td>87654321</td><td>Académico</td>
+                    <td>Club de Lectura</td><td>Cultural</td><td>Ñuñoa</td><td>Martes</td><td>19:00 - 20:30</td><td>Lectura y discusión de libros</td><td>https://lectura.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Carlos Soto</td><td>carlos@mail.com</td><td>23456789</td><td>Funcionario</td>
+                    <td>Fútbol Recreativo</td><td>Deporte</td><td>Maipú</td><td>Sábado</td><td>10:00 - 12:00</td><td>Partidos amistosos entre estudiantes</td><td>https://futbol.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Fernanda Rojas</td><td>fernanda@mail.com</td><td>34567890</td><td>Estudiante postgrado</td>
+                    <td>Curso de Pintura</td><td>Arte</td><td>La Florida</td><td>Viernes</td><td>17:00 - 19:00</td><td>Técnicas básicas de pintura</td><td>https://arte.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Pedro Morales</td><td>pedro@mail.com</td><td>45678901</td><td>Funcionario</td>
+                    <td>Voluntariado</td><td>Social</td><td>Santiago Centro</td><td>Domingo</td><td>09:00 - 13:00</td><td>Apoyo en comedores solidarios</td><td>https://voluntariado.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Camila Torres</td><td>camila@mail.com</td><td>56789012</td><td>Estudiante pregrado</td>
+                    <td>Taller de Programación</td><td>Academico</td><td>Las Condes</td><td>Jueves</td><td>18:30 - 20:30</td><td>Introducción a Python</td><td>https://code.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Diego Fuentes</td><td>diego@mail.com</td><td>67890123</td><td>Académico</td>
+                    <td>Danza Urbana</td><td>Arte</td><td>Recoleta</td><td>Miércoles</td><td>17:00 - 18:30</td><td>Clases de baile urbano</td><td>https://danza.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Valentina Cruz</td><td>valentina@mail.com</td><td>78901234</td><td>Estudiante postgrado</td>
+                    <td>Ajedrez</td><td>Cultural</td><td>Independencia</td><td>Lunes</td><td>16:00 - 18:00</td><td>Partidas y torneos internos</td><td>https://ajedrez.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Ricardo Díaz</td><td>ricardo@mail.com</td><td>89012345</td><td>Funcionario</td>
+                    <td>Running Club</td><td>Deporte</td><td>Vitacura</td><td>Martes, Jueves</td><td>07:00 - 08:30</td><td>Entrenamiento grupal de running</td><td>https://running.cl</td>
+                </tr>
+
+                <tr>
+                    <td>Paula Herrera</td><td>paula@mail.com</td><td>90123456</td><td>Académico</td>
+                    <td>Taller de Fotografía</td><td>Arte</td><td>San Miguel</td><td>Sábado</td><td>15:00 - 17:00</td><td>Uso de cámara y composición</td><td>https://foto.cl</td>
+                </tr>
+            </table>
+            <div>
+                <button onclick="cambiarPagina(-1)">&lt;</button>
+                <span id="pagina-actual">1</span>
+                <button onclick="cambiarPagina(1)">&gt;</button>
+            </div>
+            <div class="botones">
+                <button id="inicio" type="button">Volver al inicio</button>
+            </div>
+        </div>
+        <script src="lista.js"></script>
+    </body>
